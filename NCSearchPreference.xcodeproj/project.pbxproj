@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A43AE47B17A2D48F0089AE6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43AE47A17A2D48F0089AE6C /* Foundation.framework */; };
+		A43AE47D17A2D48F0089AE6C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43AE47C17A2D48F0089AE6C /* UIKit.framework */; };
+		A43AE47F17A2D48F0089AE6C /* Preferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43AE47E17A2D48F0089AE6C /* Preferences.framework */; };
+		A43AE48A17A2D48F0089AE6C /* NCSearchPreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = A43AE48917A2D48F0089AE6C /* NCSearchPreferenceController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A43AE47717A2D48F0089AE6C /* NCSearchPreference.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NCSearchPreference.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A43AE47A17A2D48F0089AE6C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A43AE47C17A2D48F0089AE6C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A43AE47E17A2D48F0089AE6C /* Preferences.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Preferences.framework; path = Library/Frameworks/Preferences.framework; sourceTree = DEVELOPER_DIR; };
+		A43AE48317A2D48F0089AE6C /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		A43AE48417A2D48F0089AE6C /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		A43AE48617A2D48F0089AE6C /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		A43AE48717A2D48F0089AE6C /* NCSearchPreference-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NCSearchPreference-Info.plist"; sourceTree = "<group>"; };
+		A43AE48817A2D48F0089AE6C /* NCSearchPreferenceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NCSearchPreferenceController.h; sourceTree = "<group>"; };
+		A43AE48917A2D48F0089AE6C /* NCSearchPreferenceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NCSearchPreferenceController.m; sourceTree = "<group>"; };
+		A43AE48E17A2D48F0089AE6C /* NCSearchPreference.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = NCSearchPreference.plist; path = Package/Library/PreferenceLoader/Preferences/NCSearchPreference.plist; sourceTree = "<group>"; };
+		A43AE49117A2D48F0089AE6C /* NCSearchPreference.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = NCSearchPreference.plist; path = Package/Library/PreferenceBundles/NCSearchPreference.bundle/NCSearchPreference.plist; sourceTree = "<group>"; };
+		A43AE49217A2D48F0089AE6C /* NCSearchPreferenceIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NCSearchPreferenceIcon.png; path = Package/Library/PreferenceBundles/NCSearchPreference.bundle/NCSearchPreferenceIcon.png; sourceTree = "<group>"; };
+		A43AE49317A2D48F0089AE6C /* NCSearchPreferenceIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NCSearchPreferenceIcon@2x.png"; path = "Package/Library/PreferenceBundles/NCSearchPreference.bundle/NCSearchPreferenceIcon@2x.png"; sourceTree = "<group>"; };
+		A43AE49817A2D48F0089AE6C /* com.suu.NCSearchPreference.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = com.suu.NCSearchPreference.plist; path = Package/var/mobile/Library/Preferences/com.suu.NCSearchPreference.plist; sourceTree = "<group>"; };
+		A43AE49917A2D48F0089AE6C /* NCSearchPreference-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NCSearchPreference-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A43AE47317A2D48F0089AE6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A43AE47B17A2D48F0089AE6C /* Foundation.framework in Frameworks */,
+				A43AE47D17A2D48F0089AE6C /* UIKit.framework in Frameworks */,
+				A43AE47F17A2D48F0089AE6C /* Preferences.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A43AE46D17A2D48F0089AE6C = {
+			isa = PBXGroup;
+			children = (
+				A43AE48017A2D48F0089AE6C /* NCSearchPreference */,
+				A43AE47917A2D48F0089AE6C /* Frameworks */,
+				A43AE47817A2D48F0089AE6C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A43AE47817A2D48F0089AE6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A43AE47717A2D48F0089AE6C /* NCSearchPreference.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A43AE47917A2D48F0089AE6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A43AE47A17A2D48F0089AE6C /* Foundation.framework */,
+				A43AE47C17A2D48F0089AE6C /* UIKit.framework */,
+				A43AE47E17A2D48F0089AE6C /* Preferences.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A43AE48017A2D48F0089AE6C /* NCSearchPreference */ = {
+			isa = PBXGroup;
+			children = (
+				A43AE48817A2D48F0089AE6C /* NCSearchPreferenceController.h */,
+				A43AE48917A2D48F0089AE6C /* NCSearchPreferenceController.m */,
+				A43AE48117A2D48F0089AE6C /* Package */,
+				A43AE48517A2D48F0089AE6C /* Supporting Files */,
+			);
+			path = NCSearchPreference;
+			sourceTree = "<group>";
+		};
+		A43AE48117A2D48F0089AE6C /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				A43AE48217A2D48F0089AE6C /* DEBIAN */,
+				A43AE48B17A2D48F0089AE6C /* Library */,
+				A43AE49417A2D48F0089AE6C /* var */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		A43AE48217A2D48F0089AE6C /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				A43AE48317A2D48F0089AE6C /* control.txt */,
+				A43AE48417A2D48F0089AE6C /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		A43AE48517A2D48F0089AE6C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A43AE48617A2D48F0089AE6C /* PackageVersion.plist */,
+				A43AE48717A2D48F0089AE6C /* NCSearchPreference-Info.plist */,
+				A43AE49917A2D48F0089AE6C /* NCSearchPreference-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A43AE48B17A2D48F0089AE6C /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				A43AE48C17A2D48F0089AE6C /* PreferenceLoader */,
+				A43AE48F17A2D48F0089AE6C /* PreferenceBundles */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		A43AE48C17A2D48F0089AE6C /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				A43AE48D17A2D48F0089AE6C /* Preferences */,
+			);
+			name = PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		A43AE48D17A2D48F0089AE6C /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				A43AE48E17A2D48F0089AE6C /* NCSearchPreference.plist */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		A43AE48F17A2D48F0089AE6C /* PreferenceBundles */ = {
+			isa = PBXGroup;
+			children = (
+				A43AE49017A2D48F0089AE6C /* ___PACKAGENAME___.bundle */,
+			);
+			name = PreferenceBundles;
+			sourceTree = "<group>";
+		};
+		A43AE49017A2D48F0089AE6C /* ___PACKAGENAME___.bundle */ = {
+			isa = PBXGroup;
+			children = (
+				A43AE49117A2D48F0089AE6C /* NCSearchPreference.plist */,
+				A43AE49217A2D48F0089AE6C /* NCSearchPreferenceIcon.png */,
+				A43AE49317A2D48F0089AE6C /* NCSearchPreferenceIcon@2x.png */,
+			);
+			name = "___PACKAGENAME___.bundle";
+			sourceTree = "<group>";
+		};
+		A43AE49417A2D48F0089AE6C /* var */ = {
+			isa = PBXGroup;
+			children = (
+				A43AE49517A2D48F0089AE6C /* mobile */,
+			);
+			name = var;
+			sourceTree = "<group>";
+		};
+		A43AE49517A2D48F0089AE6C /* mobile */ = {
+			isa = PBXGroup;
+			children = (
+				A43AE49617A2D48F0089AE6C /* Library */,
+			);
+			name = mobile;
+			sourceTree = "<group>";
+		};
+		A43AE49617A2D48F0089AE6C /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				A43AE49717A2D48F0089AE6C /* Preferences */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		A43AE49717A2D48F0089AE6C /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				A43AE49817A2D48F0089AE6C /* com.suu.NCSearchPreference.plist */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A43AE47417A2D48F0089AE6C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A43AE47617A2D48F0089AE6C /* NCSearchPreference */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A43AE49C17A2D48F0089AE6C /* Build configuration list for PBXNativeTarget "NCSearchPreference" */;
+			buildPhases = (
+				A43AE47217A2D48F0089AE6C /* Sources */,
+				A43AE47317A2D48F0089AE6C /* Frameworks */,
+				A43AE47417A2D48F0089AE6C /* Headers */,
+				A43AE47517A2D48F0089AE6C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NCSearchPreference;
+			productName = NCSearchPreference;
+			productReference = A43AE47717A2D48F0089AE6C /* NCSearchPreference.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A43AE46E17A2D48F0089AE6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = A43AE47117A2D48F0089AE6C /* Build configuration list for PBXProject "NCSearchPreference" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A43AE46D17A2D48F0089AE6C;
+			productRefGroup = A43AE47817A2D48F0089AE6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A43AE47617A2D48F0089AE6C /* NCSearchPreference */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A43AE47517A2D48F0089AE6C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A43AE47217A2D48F0089AE6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A43AE48A17A2D48F0089AE6C /* NCSearchPreferenceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A43AE49A17A2D48F0089AE6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		A43AE49B17A2D48F0089AE6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		A43AE49D17A2D48F0089AE6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NCSearchPreference/NCSearchPreference-Prefix.pch";
+				INFOPLIST_FILE = "NCSearchPreference/NCSearchPreference-Info.plist";
+				INSTALL_PATH = /Library/PreferenceBundles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		A43AE49E17A2D48F0089AE6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NCSearchPreference/NCSearchPreference-Prefix.pch";
+				INFOPLIST_FILE = "NCSearchPreference/NCSearchPreference-Info.plist";
+				INSTALL_PATH = /Library/PreferenceBundles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A43AE47117A2D48F0089AE6C /* Build configuration list for PBXProject "NCSearchPreference" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A43AE49A17A2D48F0089AE6C /* Debug */,
+				A43AE49B17A2D48F0089AE6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A43AE49C17A2D48F0089AE6C /* Build configuration list for PBXNativeTarget "NCSearchPreference" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A43AE49D17A2D48F0089AE6C /* Debug */,
+				A43AE49E17A2D48F0089AE6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A43AE46E17A2D48F0089AE6C /* Project object */;
+}

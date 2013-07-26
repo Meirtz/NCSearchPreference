@@ -1,0 +1,17 @@
+Package: com.suu.NCSearchPreference
+Name: NCSearchPreference
+Version: 0.1-1
+Description: 
+Section: PreferenceBundles
+Depends: firmware (>= 5.0), mobilesubstrate, preferenceloader
+Conflicts: 
+Replaces: 
+Priority: optional
+Architecture: iphoneos-arm
+Author: sun
+dev: 
+Homepage: 
+Depiction: 
+Maintainer: 
+Icon: 
+
