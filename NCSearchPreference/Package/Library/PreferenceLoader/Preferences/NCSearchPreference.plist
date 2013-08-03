@@ -11,7 +11,7 @@
 		<key>icon</key>
 		<string>NCSearchPreferenceIcon.png</string>
 		<key>label</key>
-		<string>NCSearchPreference</string>
+		<string>NCSearch</string>
 		<key>isController</key>
 		<true/>
 	</dict>
